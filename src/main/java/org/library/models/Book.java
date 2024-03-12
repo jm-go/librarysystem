@@ -21,6 +21,9 @@ public class Book {
         this.loanedTo = null;
     }
 
+    public Book() {
+    }
+
     public Book(int number, String title, String author, String genre, String subGenre, String publisher, boolean isLoaned, String loanedTo) {
         this(number, title, author, genre, subGenre, publisher);
         this.isLoaned = isLoaned;
@@ -75,11 +78,11 @@ public class Book {
         this.publisher = publisher;
     }
 
-    public boolean isLoaned() {
+    public boolean getIsLoaned() {
         return isLoaned;
     }
 
-    public void setLoaned(boolean loaned) {
+    public void setIsLoaned(boolean loaned) {
         isLoaned = loaned;
     }
 
@@ -93,13 +96,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Book{" +
-                "number=" + number +
-                ", title='" + title + '\'' +
-                ", author='" + author + '\'' +
-                ", genre='" + genre + '\'' +
-                ", subGenre='" + subGenre + '\'' +
-                ", publisher='" + publisher + '\'' +
-                '}';
+        return String.format("%d. Title: \"%s\" by %s (Genre: %s, Sub-genre: %s, Publisher: %s)",
+                number, title, author, genre, subGenre, publisher);
     }
 }
