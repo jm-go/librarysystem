@@ -115,7 +115,7 @@ public class LibraryApp {
 
     private void adminMenu() {
         System.out.println("Admin Menu:");
-        // Implement admin actions (generate reports, add book, etc.)
+        // TODO: Add all admin actions - see reports 1) books that are out on loan 2) how many times the book has been loaned out
     }
 
     private void loanBook() {
