@@ -12,9 +12,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CSVReader {
-    public List<Book> readBooksFromCSV(String resourceFileName) {
+    public static List<Book> readBooksFromCSV(String resourceFileName) {
         List<Book> books = new ArrayList<>();
-        try (InputStream inputStream = getClass().getClassLoader().getResourceAsStream(resourceFileName);
+        try (InputStream inputStream = CSVReader.class.getClassLoader().getResourceAsStream(resourceFileName);
              BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
              CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT.withFirstRecordAsHeader().withIgnoreHeaderCase().withTrim())) {
 
