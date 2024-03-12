@@ -7,9 +7,8 @@ public class Book {
     private String genre;
     private String subGenre;
     private String publisher;
-
-    public Book() {
-    }
+    private boolean isLoaned;
+    private String loanedTo;
 
     public Book(int number, String title, String author, String genre, String subGenre, String publisher) {
         this.number = number;
@@ -18,6 +17,14 @@ public class Book {
         this.genre = genre;
         this.subGenre = subGenre;
         this.publisher = publisher;
+        this.isLoaned = false;
+        this.loanedTo = null;
+    }
+
+    public Book(int number, String title, String author, String genre, String subGenre, String publisher, boolean isLoaned, String loanedTo) {
+        this(number, title, author, genre, subGenre, publisher);
+        this.isLoaned = isLoaned;
+        this.loanedTo = loanedTo;
     }
 
     public int getNumber() {
@@ -66,6 +73,22 @@ public class Book {
 
     public void setPublisher(String publisher) {
         this.publisher = publisher;
+    }
+
+    public boolean isLoaned() {
+        return isLoaned;
+    }
+
+    public void setLoaned(boolean loaned) {
+        isLoaned = loaned;
+    }
+
+    public String getLoanedTo() {
+        return loanedTo;
+    }
+
+    public void setLoanedTo(String loanedTo) {
+        this.loanedTo = loanedTo;
     }
 
     @Override
