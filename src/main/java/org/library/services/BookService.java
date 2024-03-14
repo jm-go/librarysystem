@@ -95,7 +95,7 @@ public class BookService {
     }
 
     public void printLoanCountReport() {
-        books.forEach(book -> System.out.println(book.getTitle() + " has been loaned out " + book.getTimesLoaned() + " times."));
+        books.forEach(book -> System.out.println(book.getNumber() + ". " + book.getTitle() + " has been loaned out " + book.getTimesLoaned() + " times."));
     }
 
 }
