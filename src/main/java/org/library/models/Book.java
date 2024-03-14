@@ -112,7 +112,7 @@ public class Book {
         this.timesLoaned = timesLoaned;
     }
 
-    public void incrementLoanCounter() {
+    public void incrementTimesLoaned() {
         this.timesLoaned++;
     }
 

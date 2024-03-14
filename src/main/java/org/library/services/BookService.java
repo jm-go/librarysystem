@@ -48,7 +48,7 @@ public class BookService {
             if (book.getNumber() == bookNumber && !book.getIsLoaned()) {
                 book.setIsLoaned(true);
                 book.setLoanedTo(username);
-                // TODO: Save changes to the persistent storage
+                book.incrementTimesLoaned();
                 return true;
             }
         }
@@ -88,4 +88,14 @@ public class BookService {
             e.printStackTrace();
         }
     }
+
+    // Report of books currently out on loan
+    public List<Book> getLoanedBooksReport() {
+        return books.stream().filter(Book::getIsLoaned).collect(Collectors.toList());
+    }
+
+    public void printLoanCountReport() {
+        books.forEach(book -> System.out.println(book.getTitle() + " has been loaned out " + book.getTimesLoaned() + " times."));
+    }
+
 }
