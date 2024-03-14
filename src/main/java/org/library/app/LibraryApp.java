@@ -114,8 +114,29 @@ public class LibraryApp {
 
 
     private void adminMenu() {
-        System.out.println("Admin Menu:");
-        // TODO: Add all admin actions - see reports 1) books that are out on loan 2) how many times the book has been loaned out
+        String option;
+        do {
+            System.out.println("\nAdmin Menu:");
+            System.out.println("1. View Books Out on Loan");
+            System.out.println("2. View Loan Count for Each Book");
+            System.out.println("3. Logout");
+            System.out.print("Select an option: ");
+            option = scanner.nextLine();
+
+            switch (option) {
+                case "1":
+                    viewLoanedBooksReport();
+                    break;
+                case "2":
+                    bookService.printLoanCountReport();
+                    break;
+                case "3":
+                    logout();
+                    break;
+                default:
+                    System.out.println("Invalid option. Please try again.");
+            }
+        } while (!"3".equals(option));
     }
 
     private void loanBook() {
@@ -132,7 +153,7 @@ public class LibraryApp {
 
     private void returnBook() {
         System.out.println("Enter the number of the book you are returning:");
-        int bookNumber = Integer.parseInt(scanner.nextLine()); // Simple parsing; consider validating input
+        int bookNumber = Integer.parseInt(scanner.nextLine());
         boolean success = bookService.returnBook(bookNumber, currentUser.getUsername());
         if (success) {
             System.out.println("Book returned successfully.");
@@ -151,6 +172,16 @@ public class LibraryApp {
         for (Book book : loanedBooks) {
             System.out.println(book);
         }
+    }
+
+    private void viewLoanedBooksReport() {
+        List<Book> loanedBooks = bookService.getLoanedBooksReport();
+        if (loanedBooks.isEmpty()) {
+            System.out.println("No books are currently loaned out.");
+            return;
+        }
+        System.out.println("Books currently out on loan:");
+        loanedBooks.forEach(book -> System.out.println(book));
     }
 
     private void logout() {
