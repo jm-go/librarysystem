@@ -54,17 +54,32 @@ public class LibraryApp {
 
     private void createAccount() {
         System.out.println("Create a new account");
-        System.out.print("Enter username: ");
-        String username = scanner.nextLine();
-        System.out.print("Enter password: ");
-        String password = scanner.nextLine();
+
+        String username = "";
+        while (username.isBlank()) {
+            System.out.print("Enter username: ");
+            username = scanner.nextLine();
+            if (username.isBlank()) {
+                System.out.println("Username cannot be empty. Please try again.");
+            }
+        }
+
+        String password = "";
+        while (password.isBlank()) {
+            System.out.print("Enter password: ");
+            password = scanner.nextLine();
+            if (password.isBlank()) {
+                System.out.println("Password cannot be empty. Please try again.");
+            }
+        }
+
         String role = "user";
 
         boolean success = authService.createUser(username, password, role);
         if (success) {
             System.out.println("Account created successfully as a user. Please log in.");
         } else {
-            System.out.println("Account creation failed. Username may already exist.");
+            System.out.println("Account creation failed. Username may already exist or is invalid.");
         }
     }
 
