@@ -53,7 +53,7 @@ public class LibraryApp {
     }
 
     private void createAccount() {
-        System.out.println("Create a new account");
+        System.out.println("\nCreate a new account");
 
         String username = "";
         while (username.isBlank()) {
@@ -69,7 +69,7 @@ public class LibraryApp {
             System.out.print("Enter password: ");
             password = scanner.nextLine();
             if (password.isBlank()) {
-                System.out.println("Password cannot be empty. Please try again.");
+                System.out.println("\nPassword cannot be empty. Please try again.");
             }
         }
 
@@ -77,9 +77,9 @@ public class LibraryApp {
 
         boolean success = authService.createUser(username, password, role);
         if (success) {
-            System.out.println("Account created successfully as a user. Please log in.");
+            System.out.println("\nAccount created successfully. Please log in.");
         } else {
-            System.out.println("Account creation failed. Username may already exist or is invalid.");
+            System.out.println("\nAccount creation failed. Username may already exist or is invalid.");
         }
     }
 
@@ -92,9 +92,9 @@ public class LibraryApp {
 
         currentUser = authService.authenticate(username, password);
         if (currentUser == null) {
-            System.out.println("Login failed. Please try again.");
+            System.out.println("\nLogin failed. Please try again.");
         } else {
-            System.out.println("Login successful.");
+            System.out.println("\nLogin successful.");
         }
     }
 
@@ -128,7 +128,7 @@ public class LibraryApp {
                     logout();
                     break;
                 default:
-                    System.out.println("Invalid option. Please try again.");
+                    System.out.println("\nInvalid option. Please try again.");
             }
         } while (!"5".equals(option));
     }
@@ -136,10 +136,10 @@ public class LibraryApp {
     private void viewAvailableBooks() {
         List<Book> availableBooks = bookService.getAvailableBooks();
         if (availableBooks.isEmpty()) {
-            System.out.println("No available books at the moment.");
+            System.out.println("\nNo available books at the moment.");
             return;
         }
-        System.out.println("Available Books:");
+        System.out.println("\nAvailable Books:");
         for (Book book : availableBooks) {
             System.out.println(book);
         }
@@ -214,7 +214,7 @@ public class LibraryApp {
             return;
         }
         System.out.println("Books currently out on loan:");
-        loanedBooks.forEach(book -> System.out.println(book));
+        loanedBooks.forEach(System.out::println);
     }
 
     private void logout() {
