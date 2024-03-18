@@ -60,7 +60,7 @@ public class LibraryApp {
             System.out.print("Enter username: ");
             username = scanner.nextLine();
             if (username.isBlank()) {
-                System.out.println("Username cannot be empty. Please try again.");
+                System.out.println("\nUsername cannot be empty. Please try again.");
             }
         }
 
@@ -107,7 +107,7 @@ public class LibraryApp {
             System.out.println("3. Return a Book");
             System.out.println("4. View Loaned Books");
             System.out.println("5. Logout");
-            System.out.print("Select an option: ");
+            System.out.print("\nSelect an option: ");
             option = scanner.nextLine();
             System.out.println();
 
@@ -201,7 +201,7 @@ public class LibraryApp {
             System.out.println("You have not loaned any books.");
             return;
         }
-        System.out.println("Your Loaned Books:");
+        System.out.println("\nYour Loaned Books:");
         for (Book book : loanedBooks) {
             System.out.println(book);
         }
