@@ -153,7 +153,7 @@ public class LibraryApp {
             System.out.println("1. View Books Out on Loan");
             System.out.println("2. View Loan Count for Each Book");
             System.out.println("3. Logout");
-            System.out.print("Select an option: ");
+            System.out.print("\nSelect an option: ");
             option = scanner.nextLine();
 
             switch (option) {
