@@ -25,8 +25,7 @@ public class LibraryApp {
 
     public void run() {
         while (true) {
-            System.out.println("Welcome to our library!");
-            System.out.println("1. Login\n2. Exit");
+            System.out.println("1. Login\n2. Create Account\n3. Exit");
             String choice = scanner.nextLine();
 
             switch (choice) {
@@ -41,12 +40,31 @@ public class LibraryApp {
                     }
                     break;
                 case "2":
+                    createAccount();
+                    break;
+                case "3":
                     System.exit(0);
                     break;
                 default:
                     System.out.println("Invalid option. Please try again.");
                     break;
             }
+        }
+    }
+
+    private void createAccount() {
+        System.out.println("Create a new account");
+        System.out.print("Enter username: ");
+        String username = scanner.nextLine();
+        System.out.print("Enter password: ");
+        String password = scanner.nextLine();
+        String role = "user";
+
+        boolean success = authService.createUser(username, password, role);
+        if (success) {
+            System.out.println("Account created successfully as a user. Please log in.");
+        } else {
+            System.out.println("Account creation failed. Username may already exist.");
         }
     }
 
