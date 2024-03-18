@@ -25,8 +25,7 @@ public class LibraryApp {
 
     public void run() {
         while (true) {
-            System.out.println("Welcome to our library!");
-            System.out.println("1. Login\n2. Exit");
+            System.out.println("1. Login\n2. Create Account\n3. Exit");
             String choice = scanner.nextLine();
 
             switch (choice) {
@@ -41,12 +40,46 @@ public class LibraryApp {
                     }
                     break;
                 case "2":
+                    createAccount();
+                    break;
+                case "3":
                     System.exit(0);
                     break;
                 default:
                     System.out.println("Invalid option. Please try again.");
                     break;
             }
+        }
+    }
+
+    private void createAccount() {
+        System.out.println("\nCreate a new account");
+
+        String username = "";
+        while (username.isBlank()) {
+            System.out.print("Enter username: ");
+            username = scanner.nextLine();
+            if (username.isBlank()) {
+                System.out.println("Username cannot be empty. Please try again.");
+            }
+        }
+
+        String password = "";
+        while (password.isBlank()) {
+            System.out.print("Enter password: ");
+            password = scanner.nextLine();
+            if (password.isBlank()) {
+                System.out.println("\nPassword cannot be empty. Please try again.");
+            }
+        }
+
+        String role = "user";
+
+        boolean success = authService.createUser(username, password, role);
+        if (success) {
+            System.out.println("\nAccount created successfully. Please log in.");
+        } else {
+            System.out.println("\nAccount creation failed. Username may already exist or is invalid.");
         }
     }
 
@@ -59,9 +92,9 @@ public class LibraryApp {
 
         currentUser = authService.authenticate(username, password);
         if (currentUser == null) {
-            System.out.println("Login failed. Please try again.");
+            System.out.println("\nLogin failed. Please try again.");
         } else {
-            System.out.println("Login successful.");
+            System.out.println("\nLogin successful.");
         }
     }
 
@@ -95,7 +128,7 @@ public class LibraryApp {
                     logout();
                     break;
                 default:
-                    System.out.println("Invalid option. Please try again.");
+                    System.out.println("\nInvalid option. Please try again.");
             }
         } while (!"5".equals(option));
     }
@@ -103,10 +136,10 @@ public class LibraryApp {
     private void viewAvailableBooks() {
         List<Book> availableBooks = bookService.getAvailableBooks();
         if (availableBooks.isEmpty()) {
-            System.out.println("No available books at the moment.");
+            System.out.println("\nNo available books at the moment.");
             return;
         }
-        System.out.println("Available Books:");
+        System.out.println("\nAvailable Books:");
         for (Book book : availableBooks) {
             System.out.println(book);
         }
@@ -120,7 +153,7 @@ public class LibraryApp {
             System.out.println("1. View Books Out on Loan");
             System.out.println("2. View Loan Count for Each Book");
             System.out.println("3. Logout");
-            System.out.print("Select an option: ");
+            System.out.print("\nSelect an option: ");
             option = scanner.nextLine();
 
             switch (option) {
@@ -181,7 +214,7 @@ public class LibraryApp {
             return;
         }
         System.out.println("Books currently out on loan:");
-        loanedBooks.forEach(book -> System.out.println(book));
+        loanedBooks.forEach(System.out::println);
     }
 
     private void logout() {
