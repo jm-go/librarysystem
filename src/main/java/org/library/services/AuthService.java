@@ -5,9 +5,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AuthService {
-    private List<User> users = new ArrayList<>();
+    private List<User> users;
 
     public AuthService() {
+        this.users = new ArrayList<>();
         users.add(new User("admin", "password", "admin"));
         users.add(new User("user", "password", "user"));
     }
@@ -19,5 +20,15 @@ public class AuthService {
             }
         }
         return null;
+    }
+
+    public boolean createUser(String username, String password, String role) {
+        for (User existingUser : users) {
+            if (existingUser.getUsername().equals(username)) {
+                return false;
+            }
+        }
+        users.add(new User(username, password, role));
+        return true;
     }
 }
