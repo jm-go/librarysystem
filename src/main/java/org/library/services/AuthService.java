@@ -1,16 +1,54 @@
 package org.library.services;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import org.library.models.User;
+
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class AuthService {
     private List<User> users;
+    private final String filePath = "users.json";
 
     public AuthService() {
         this.users = new ArrayList<>();
-        users.add(new User("admin", "password", "admin"));
-        users.add(new User("user", "password", "user"));
+        loadUsersFromJson();
+        if (users.isEmpty()) {
+            users.add(new User("admin", "password", "admin"));
+            users.add(new User("user", "password", "user"));
+            saveUsersToJson();
+        }
+    }
+
+    private void loadUsersFromJson() {
+        ObjectMapper objectMapper = new ObjectMapper();
+        try {
+            File file = new File(filePath);
+            if (file.exists()) {
+                users = objectMapper.readValue(file, new TypeReference<List<User>>() {});
+            }
+
+        } catch (Exception e) {
+            System.err.println("Could not load users from file: " + filePath);
+            e.printStackTrace();
+        }
+    }
+
+    // Add comment
+    public void saveUsersToJson() {
+        ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
+        try {
+            objectMapper.writeValue(new File("users.json"), users);
+            System.out.println("Users saved successfully to users.json");
+        } catch (IOException e) {
+            System.err.println("Error saving users to file: users.json");
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -46,6 +84,15 @@ public class AuthService {
             }
         }
         users.add(new User(username, password, role));
+        saveUsersToJson();
         return true;
+    }
+
+    //Add comment
+    public User getUserByUsername(String username) {
+        return users.stream()
+                .filter(user -> user.getUsername().equals(username))
+                .findFirst()
+                .orElse(null);
     }
 }
