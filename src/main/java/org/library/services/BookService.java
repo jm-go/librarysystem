@@ -6,7 +6,6 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import org.library.models.Book;
 import org.library.models.User;
 
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.io.File;
 import java.io.IOException;
@@ -84,7 +83,7 @@ public class BookService {
                 user.addLoanedBookNumber(bookNumber);
                 authService.saveUsersToJson();
             }
-            saveBooksToJson("books.json");
+            saveBooksToJson();
         }
         return isLoaned;
     }
@@ -110,7 +109,7 @@ public class BookService {
             }
         }
         if (isReturned) {
-            saveBooksToJson("books.json");
+            saveBooksToJson();
         }
         return isReturned;
     }
@@ -129,18 +128,16 @@ public class BookService {
 
     /**
      * Saves the current state of books (including loan information) to a JSON file.
-     *
-     * @param filePath The path where the books data will be saved.
      */
-    private void saveBooksToJson(String filePath) {
+    private void saveBooksToJson() {
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
 
         try {
-            objectMapper.writeValue(new File(filePath), books);
-            System.out.println("Books saved successfully to " + filePath);
+            objectMapper.writeValue(new File("books.json"), books);
+            System.out.println("SYSTEM MESSAGE: Books saved successfully to " + "books.json");
         } catch (IOException e) {
-            System.err.println("Error saving books to file: " + filePath);
+            System.err.println("Error saving books to file: " + "books.json");
             e.printStackTrace();
         }
     }
