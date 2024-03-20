@@ -7,8 +7,7 @@
   "publisher" : "Wiley",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 2,
   "title" : "Data Smart",
@@ -18,8 +17,7 @@
   "publisher" : "Wiley",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 3,
   "title" : "God Created the Integers",
@@ -29,8 +27,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 4,
   "title" : "Superfreakonomics",
@@ -40,8 +37,7 @@
   "publisher" : "HarperCollins",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 5,
   "title" : "Orientalism",
@@ -51,8 +47,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 6,
   "title" : "Nature of Statistical Learning Theory, The",
@@ -62,8 +57,7 @@
   "publisher" : "Springer",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 7,
   "title" : "Integration of the Indian States",
@@ -73,8 +67,7 @@
   "publisher" : "Orient Blackswan",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 8,
   "title" : "Drunkard's Walk, The",
@@ -84,8 +77,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 9,
   "title" : "Image Processing & Mathematical Morphology",
@@ -95,8 +87,7 @@
   "publisher" : "CRC",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 10,
   "title" : "How to Think Like Sherlock Holmes",
@@ -106,8 +97,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 11,
   "title" : "Data Scientists at Work",
@@ -117,8 +107,7 @@
   "publisher" : "Apress",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 12,
   "title" : "Slaughterhouse Five",
@@ -128,8 +117,7 @@
   "publisher" : "Random House",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 13,
   "title" : "Birth of a Theorem",
@@ -139,8 +127,7 @@
   "publisher" : "Bodley Head",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 14,
   "title" : "Structure & Interpretation of Computer Programs",
@@ -150,8 +137,7 @@
   "publisher" : "MIT Press",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 15,
   "title" : "Age of Wrath, The",
@@ -161,8 +147,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 16,
   "title" : "Trial, The",
@@ -172,8 +157,7 @@
   "publisher" : "Random House",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 17,
   "title" : "Statistical Decision Theory'",
@@ -183,8 +167,7 @@
   "publisher" : "MIT Press",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 18,
   "title" : "Data Mining Handbook",
@@ -194,8 +177,7 @@
   "publisher" : "Apress",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 19,
   "title" : "New Machiavelli, The",
@@ -205,8 +187,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 20,
   "title" : "Physics & Philosophy",
@@ -216,8 +197,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 21,
   "title" : "Making Software",
@@ -227,8 +207,7 @@
   "publisher" : "O'Reilly",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 22,
   "title" : "Analysis, Vol I",
@@ -238,8 +217,7 @@
   "publisher" : "HBA",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 23,
   "title" : "Machine Learning for Hackers",
@@ -249,8 +227,7 @@
   "publisher" : "O'Reilly",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 24,
   "title" : "Signal and the Noise, The",
@@ -260,8 +237,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 25,
   "title" : "Python for Data Analysis",
@@ -271,8 +247,7 @@
   "publisher" : "O'Reilly",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 26,
   "title" : "Introduction to Algorithms",
@@ -282,8 +257,7 @@
   "publisher" : "MIT Press",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 27,
   "title" : "Beautiful and the Damned, The",
@@ -293,8 +267,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 28,
   "title" : "Outsider, The",
@@ -304,8 +277,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 29,
   "title" : "Complete Sherlock Holmes, The - Vol I",
@@ -315,8 +287,7 @@
   "publisher" : "Random House",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 30,
   "title" : "Complete Sherlock Holmes, The - Vol II",
@@ -326,8 +297,7 @@
   "publisher" : "Random House",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 31,
   "title" : "Wealth of Nations, The",
@@ -337,8 +307,7 @@
   "publisher" : "Random House",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 32,
   "title" : "Pillars of the Earth, The",
@@ -348,8 +317,7 @@
   "publisher" : "Random House",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 33,
   "title" : "Mein Kampf",
@@ -359,8 +327,7 @@
   "publisher" : "Rupa",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 34,
   "title" : "Tao of Physics, The",
@@ -370,8 +337,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 35,
   "title" : "Surely You're Joking Mr Feynman",
@@ -381,8 +347,7 @@
   "publisher" : "Random House",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 36,
   "title" : "Farewell to Arms, A",
@@ -392,8 +357,7 @@
   "publisher" : "Rupa",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 37,
   "title" : "Veteran, The",
@@ -403,8 +367,7 @@
   "publisher" : "Transworld",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 38,
   "title" : "False Impressions",
@@ -414,8 +377,7 @@
   "publisher" : "Pan",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 39,
   "title" : "Last Lecture, The",
@@ -425,8 +387,7 @@
   "publisher" : "Hyperion",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 40,
   "title" : "Return of the Primitive",
@@ -436,8 +397,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 41,
   "title" : "Jurassic Park",
@@ -447,8 +407,7 @@
   "publisher" : "Random House",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 42,
   "title" : "Russian Journal, A",
@@ -458,8 +417,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 43,
   "title" : "Tales of Mystery and Imagination",
@@ -469,8 +427,7 @@
   "publisher" : "HarperCollins",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 44,
   "title" : "Freakonomics",
@@ -480,8 +437,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 45,
   "title" : "Hidden Connections, The",
@@ -491,8 +447,7 @@
   "publisher" : "HarperCollins",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 46,
   "title" : "Story of Philosophy, The",
@@ -502,8 +457,7 @@
   "publisher" : "Pocket",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 47,
   "title" : "Asami Asami",
@@ -513,8 +467,7 @@
   "publisher" : "Mauj",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 48,
   "title" : "Journal of a Novel",
@@ -524,8 +477,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 49,
   "title" : "Once There Was a War",
@@ -535,8 +487,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 50,
   "title" : "Moon is Down, The",
@@ -546,8 +497,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 51,
   "title" : "Brethren, The",
@@ -557,8 +507,7 @@
   "publisher" : "Random House",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 52,
   "title" : "In a Free State",
@@ -568,8 +517,7 @@
   "publisher" : "Rupa",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 53,
   "title" : "Catch 22",
@@ -579,8 +527,7 @@
   "publisher" : "Random House",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 54,
   "title" : "Complete Mastermind, The",
@@ -590,8 +537,7 @@
   "publisher" : "BBC",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 55,
   "title" : "Dylan on Dylan",
@@ -601,8 +547,7 @@
   "publisher" : "Random House",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 56,
   "title" : "Soft Computing & Intelligent Systems",
@@ -612,8 +557,7 @@
   "publisher" : "Elsevier",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 57,
   "title" : "Textbook of Economic Theory",
@@ -623,8 +567,7 @@
   "publisher" : "Pearson",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 58,
   "title" : "Econometric Analysis",
@@ -634,8 +577,7 @@
   "publisher" : "Pearson",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 59,
   "title" : "Learning OpenCV",
@@ -645,8 +587,7 @@
   "publisher" : "O'Reilly",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 60,
   "title" : "Data Structures Using C & C++",
@@ -656,8 +597,7 @@
   "publisher" : "Prentice Hall",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 61,
   "title" : "Computer Vision, A Modern Approach",
@@ -667,8 +607,7 @@
   "publisher" : "Pearson",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 62,
   "title" : "Principles of Communication Systems",
@@ -678,8 +617,7 @@
   "publisher" : "TMH",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 63,
   "title" : "Let Us C",
@@ -689,8 +627,7 @@
   "publisher" : "Prentice Hall",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 64,
   "title" : "Amulet of Samarkand, The",
@@ -700,8 +637,7 @@
   "publisher" : "Random House",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 65,
   "title" : "Crime and Punishment",
@@ -711,8 +647,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 66,
   "title" : "Angels & Demons",
@@ -722,8 +657,7 @@
   "publisher" : "Random House",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 67,
   "title" : "Argumentative Indian, The",
@@ -733,8 +667,7 @@
   "publisher" : "Picador",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 68,
   "title" : "Sea of Poppies",
@@ -744,8 +677,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 69,
   "title" : "Idea of Justice, The",
@@ -755,8 +687,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 70,
   "title" : "Raisin in the Sun, A",
@@ -766,8 +697,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 71,
   "title" : "All the President's Men",
@@ -777,8 +707,7 @@
   "publisher" : "Random House",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 72,
   "title" : "Prisoner of Birth, A",
@@ -788,8 +717,7 @@
   "publisher" : "Pan",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 73,
   "title" : "Scoop!",
@@ -799,8 +727,7 @@
   "publisher" : "HarperCollins",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 74,
   "title" : "Ahe Manohar Tari",
@@ -810,8 +737,7 @@
   "publisher" : "Mauj",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 75,
   "title" : "Last Mughal, The",
@@ -821,8 +747,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 76,
   "title" : "Social Choice & Welfare, Vol 39 No. 1",
@@ -832,8 +757,7 @@
   "publisher" : "Springer",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 77,
   "title" : "Radiowaril Bhashane & Shrutika",
@@ -843,8 +767,7 @@
   "publisher" : "Mauj",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 78,
   "title" : "Gun Gayin Awadi",
@@ -854,8 +777,7 @@
   "publisher" : "Mauj",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 79,
   "title" : "Aghal Paghal",
@@ -865,8 +787,7 @@
   "publisher" : "Mauj",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 80,
   "title" : "Maqta-e-Ghalib",
@@ -876,8 +797,7 @@
   "publisher" : "Mauj",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 81,
   "title" : "Beyond Degrees",
@@ -887,8 +807,7 @@
   "publisher" : "HarperCollins",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 82,
   "title" : "Manasa",
@@ -898,8 +817,7 @@
   "publisher" : "Mauj",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 83,
   "title" : "India from Midnight to Milennium",
@@ -909,8 +827,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 84,
   "title" : "World's Greatest Trials, The",
@@ -920,8 +837,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 85,
   "title" : "Great Indian Novel, The",
@@ -931,8 +847,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 86,
   "title" : "O Jerusalem!",
@@ -942,8 +857,7 @@
   "publisher" : "vikas",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 87,
   "title" : "City of Joy, The",
@@ -953,8 +867,7 @@
   "publisher" : "vikas",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 88,
   "title" : "Freedom at Midnight",
@@ -964,8 +877,7 @@
   "publisher" : "vikas",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 89,
   "title" : "Winter of Our Discontent, The",
@@ -975,8 +887,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 90,
   "title" : "On Education",
@@ -986,8 +897,7 @@
   "publisher" : "Routledge",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 91,
   "title" : "Free Will",
@@ -997,8 +907,7 @@
   "publisher" : "FreePress",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 92,
   "title" : "Bookless in Baghdad",
@@ -1008,8 +917,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 93,
   "title" : "Case of the Lame Canary, The",
@@ -1019,8 +927,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 94,
   "title" : "Theory of Everything, The",
@@ -1030,8 +937,7 @@
   "publisher" : "Jaico",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 95,
   "title" : "New Markets & Other Essays",
@@ -1041,8 +947,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 96,
   "title" : "Electric Universe",
@@ -1052,8 +957,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 97,
   "title" : "Hunchback of Notre Dame, The",
@@ -1063,8 +967,7 @@
   "publisher" : "Random House",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 98,
   "title" : "Burning Bright",
@@ -1074,8 +977,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 99,
   "title" : "Age of Discontuinity, The",
@@ -1085,8 +987,7 @@
   "publisher" : "Random House",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 100,
   "title" : "Doctor in the Nude",
@@ -1096,8 +997,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 101,
   "title" : "Down and Out in Paris & London",
@@ -1107,8 +1007,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 102,
   "title" : "Identity & Violence",
@@ -1118,8 +1017,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 103,
   "title" : "Beyond the Three Seas",
@@ -1129,8 +1027,7 @@
   "publisher" : "Random House",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 104,
   "title" : "World's Greatest Short Stories, The",
@@ -1140,8 +1037,7 @@
   "publisher" : "Jaico",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 105,
   "title" : "Talking Straight",
@@ -1151,8 +1047,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 106,
   "title" : "Maugham's Collected Short Stories, Vol 3",
@@ -1162,8 +1057,7 @@
   "publisher" : "Vintage",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 107,
   "title" : "Phantom of Manhattan, The",
@@ -1173,8 +1067,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 108,
   "title" : "Ashenden of The British Agent",
@@ -1184,8 +1077,7 @@
   "publisher" : "Vintage",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 109,
   "title" : "Zen & The Art of Motorcycle Maintenance",
@@ -1195,8 +1087,7 @@
   "publisher" : "Vintage",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 110,
   "title" : "Great War for Civilization, The",
@@ -1206,8 +1097,7 @@
   "publisher" : "HarperCollins",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 111,
   "title" : "We the Living",
@@ -1217,8 +1107,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 112,
   "title" : "Artist and the Mathematician, The",
@@ -1228,8 +1117,7 @@
   "publisher" : "HighStakes",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 113,
   "title" : "History of Western Philosophy",
@@ -1239,8 +1127,7 @@
   "publisher" : "Routledge",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 114,
   "title" : "Selected Short Stories",
@@ -1250,8 +1137,7 @@
   "publisher" : "Jaico",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 115,
   "title" : "Rationality & Freedom",
@@ -1261,8 +1147,7 @@
   "publisher" : "Springer",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 116,
   "title" : "Clash of Civilizations and Remaking of the World Order",
@@ -1272,8 +1157,7 @@
   "publisher" : "Simon&Schuster",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 117,
   "title" : "Uncommon Wisdom",
@@ -1283,8 +1167,7 @@
   "publisher" : "Fontana",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 118,
   "title" : "One",
@@ -1294,8 +1177,7 @@
   "publisher" : "Dell",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 119,
   "title" : "Karl Marx Biography",
@@ -1305,8 +1187,7 @@
   "publisher" : "Penguin",
   "isLoaned" : false,
   "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "timesLoaned" : 0
 }, {
   "number" : 120,
   "title" : "To Sir With Love",
@@ -1314,8 +1195,7 @@
   "genre" : "fiction",
   "subGenre" : "classic",
   "publisher" : "Penguin",
-  "isLoaned" : false,
-  "loanedTo" : null,
-  "timesLoaned" : 0,
-  "loaned" : false
+  "isLoaned" : true,
+  "loanedTo" : "anna1",
+  "timesLoaned" : 1
 } ]

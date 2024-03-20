@@ -23,8 +23,11 @@ public class LibraryApp {
         this.bookService = new BookService("books.json");
     }
 
+    /**
+     * Runs the main application loop, presenting the user with login, account creation, and exit options.
+     */
     public void run() {
-        System.out.println("\nWelcome to our library!");
+        System.out.println("Welcome to our library!");
         while (true) {
             System.out.println("\n1. Login\n2. Create Account\n3. Exit");
             String choice = scanner.nextLine();
@@ -53,6 +56,9 @@ public class LibraryApp {
         }
     }
 
+    /**
+     * Guides the user through the account creation process.
+     */
     private void createAccount() {
         System.out.println("\nCreate a new account");
 
@@ -84,6 +90,9 @@ public class LibraryApp {
         }
     }
 
+    /**
+     * Enables user login and sets the current user upon successful authentication.
+     */
     private void login() {
         System.out.println();
         System.out.println("Enter username:");
@@ -99,6 +108,9 @@ public class LibraryApp {
         }
     }
 
+    /**
+     * Displays the user menu and handles user actions.
+     */
     private void userMenu() {
         String option;
         do {
@@ -134,6 +146,9 @@ public class LibraryApp {
         } while (!"5".equals(option));
     }
 
+    /**
+     * Displays a list of available books.
+     */
     private void viewAvailableBooks() {
         List<Book> availableBooks = bookService.getAvailableBooks();
         if (availableBooks.isEmpty()) {
@@ -146,7 +161,9 @@ public class LibraryApp {
         }
     }
 
-
+    /**
+     * Displays the admin menu and handles admin actions.
+     */
     private void adminMenu() {
         String option;
         do {
@@ -173,7 +190,9 @@ public class LibraryApp {
         } while (!"3".equals(option));
     }
 
-    // Add comment
+    /**
+     * Allows a user to loan a book by selecting it from the available books.
+     */
     private void loanBook() {
         viewAvailableBooks();
         System.out.println("Enter the number of the book you wish to loan:");
@@ -186,7 +205,9 @@ public class LibraryApp {
         }
     }
 
-    //Add comment
+    /**
+     * Facilitates the return process of a loaned book.
+     */
     private void returnBook() {
         System.out.println("Enter the number of the book you are returning:");
         int bookNumber = Integer.parseInt(scanner.nextLine());
@@ -198,7 +219,9 @@ public class LibraryApp {
         }
     }
 
-    //Add comment
+    /**
+     * Displays a list of books currently loaned by the user.
+     */
     private void viewLoanedBooks() {
         List<Book> loanedBooks = bookService.getLoanedBooks(currentUser.getUsername());
         if (loanedBooks.isEmpty()) {
@@ -211,7 +234,9 @@ public class LibraryApp {
         }
     }
 
-    //Add comment
+    /**
+     * Generates and displays a report of books currently loaned out.
+     */
     private void viewLoanedBooksReport() {
         List<Book> loanedBooks = bookService.getLoanedBooksReport();
         if (loanedBooks.isEmpty()) {
@@ -222,21 +247,32 @@ public class LibraryApp {
         loanedBooks.forEach(System.out::println);
     }
 
-    // Add comment
+    /**
+     * Logs out the current user and returns to the main menu.
+     */
     private void logout() {
         currentUser = null;
         System.out.println("You have been logged out successfully.");
     }
 
-    // Add comment
+    /**
+     * Initialises the application's book data. If books.json does not exist,
+     * books are loaded from a CSV file and saved to books.json.
+     */
     private void initialise() {
-        List<Book> books = CSVReader.readBooksFromCSV("books.csv");
-        try {
-            ObjectMapper mapper = new ObjectMapper();
-            mapper.enable(SerializationFeature.INDENT_OUTPUT);
-            mapper.writeValue(new File("books.json"), books);
-        } catch (Exception e) {
-            e.printStackTrace();
+        File jsonFile = new File("books.json");
+        if (!jsonFile.exists()) {
+            List<Book> books = CSVReader.readBooksFromCSV("books.csv");
+            try {
+                ObjectMapper mapper = new ObjectMapper();
+                mapper.enable(SerializationFeature.INDENT_OUTPUT);
+                mapper.writeValue(jsonFile, books);
+                System.out.println("SYSTEM MESSAGE: Initialised books.json from books.csv");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        } else {
+            System.out.println("SYSTEM MESSAGE: books.json already exists, loading existing data.");
         }
     }
 }

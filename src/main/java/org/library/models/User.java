@@ -16,7 +16,6 @@ public class User {
         this.loanedBookNumbers = new ArrayList<>();
     }
 
-    // Default constructor
     public User() {
     }
 
@@ -53,6 +52,8 @@ public class User {
     }
 
     public void addLoanedBookNumber(int bookNumber) {
-        this.loanedBookNumbers.add(bookNumber);
+        if (!this.loanedBookNumbers.contains(bookNumber)) {
+            this.loanedBookNumbers.add(bookNumber);
+        }
     }
 }
