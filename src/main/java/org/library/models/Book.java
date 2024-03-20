@@ -96,20 +96,8 @@ public class Book {
         this.loanedTo = loanedTo;
     }
 
-    public boolean isLoaned() {
-        return isLoaned;
-    }
-
-    public void setLoaned(boolean loaned) {
-        isLoaned = loaned;
-    }
-
     public int getTimesLoaned() {
         return timesLoaned;
-    }
-
-    public void setTimesLoaned(int timesLoaned) {
-        this.timesLoaned = timesLoaned;
     }
 
     public void incrementTimesLoaned() {
