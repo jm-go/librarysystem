@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import org.library.models.Book;
+import org.library.models.User;
 
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -13,28 +14,32 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class BookService {
+
     private List<Book> books;
+    private final AuthService authService;
 
     public BookService(String filePath) {
         this.books = new ArrayList<>();
+        this.authService = new AuthService();
         loadBooksFromJson("books.json");
     }
 
     /**
      * Loads books from a JSON file into the book list.
      *
-     * @param resourcePath The path to the JSON file.
+     * @param filePath The path to the JSON file.
      */
-    private void loadBooksFromJson(String resourcePath) {
+    private void loadBooksFromJson(String filePath) {
         ObjectMapper objectMapper = new ObjectMapper();
-        TypeReference<List<Book>> typeReference = new TypeReference<List<Book>>() {};
-        InputStream inputStream = BookService.class.getClassLoader().getResourceAsStream(resourcePath);
-
+        TypeReference<List<Book>> typeReference = new TypeReference<>() {};
         try {
-            this.books = objectMapper.readValue(inputStream, typeReference);
-            System.out.println("Books loaded successfully.\n");
-        } catch (Exception e) {
-            System.err.println("Could not load books from file: " + resourcePath);
+            File file = new File(filePath);
+            if (file.exists()) {
+                this.books = objectMapper.readValue(file, typeReference);
+                System.out.println("Books loaded successfully.\n");
+            }
+        } catch (IOException e) {
+            System.err.println("Could not load books from file: " + filePath);
             e.printStackTrace();
         }
     }
@@ -74,6 +79,11 @@ public class BookService {
             }
         }
         if (isLoaned) {
+            User user = authService.getUserByUsername(username);
+            if (user != null) {
+                user.addLoanedBookNumber(bookNumber);
+                authService.saveUsersToJson();
+            }
             saveBooksToJson("books.json");
         }
         return isLoaned;
