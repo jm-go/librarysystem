@@ -1,0 +1,16 @@
+[ {
+  "username" : "admin",
+  "password" : "password",
+  "role" : "admin",
+  "loanedBookNumbers" : [ ]
+}, {
+  "username" : "user",
+  "password" : "password",
+  "role" : "user",
+  "loanedBookNumbers" : [ ]
+}, {
+  "username" : "anna1",
+  "password" : "password",
+  "role" : "user",
+  "loanedBookNumbers" : [ 120 ]
+} ]
