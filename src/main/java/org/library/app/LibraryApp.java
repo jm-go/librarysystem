@@ -20,12 +20,13 @@ public class LibraryApp {
 
     public LibraryApp() {
         initialise();
-        this.bookService = new BookService("src/main/resources/books.json");
+        this.bookService = new BookService("books.json");
     }
 
     public void run() {
+        System.out.println("\nWelcome to our library!");
         while (true) {
-            System.out.println("1. Login\n2. Create Account\n3. Exit");
+            System.out.println("\n1. Login\n2. Create Account\n3. Exit");
             String choice = scanner.nextLine();
 
             switch (choice) {
@@ -172,6 +173,7 @@ public class LibraryApp {
         } while (!"3".equals(option));
     }
 
+    // Add comment
     private void loanBook() {
         viewAvailableBooks();
         System.out.println("Enter the number of the book you wish to loan:");
@@ -184,6 +186,7 @@ public class LibraryApp {
         }
     }
 
+    //Add comment
     private void returnBook() {
         System.out.println("Enter the number of the book you are returning:");
         int bookNumber = Integer.parseInt(scanner.nextLine());
@@ -195,6 +198,7 @@ public class LibraryApp {
         }
     }
 
+    //Add comment
     private void viewLoanedBooks() {
         List<Book> loanedBooks = bookService.getLoanedBooks(currentUser.getUsername());
         if (loanedBooks.isEmpty()) {
@@ -207,6 +211,7 @@ public class LibraryApp {
         }
     }
 
+    //Add comment
     private void viewLoanedBooksReport() {
         List<Book> loanedBooks = bookService.getLoanedBooksReport();
         if (loanedBooks.isEmpty()) {
@@ -217,14 +222,15 @@ public class LibraryApp {
         loanedBooks.forEach(System.out::println);
     }
 
+    // Add comment
     private void logout() {
         currentUser = null;
         System.out.println("You have been logged out successfully.");
     }
 
+    // Add comment
     private void initialise() {
         List<Book> books = CSVReader.readBooksFromCSV("books.csv");
-
         try {
             ObjectMapper mapper = new ObjectMapper();
             mapper.enable(SerializationFeature.INDENT_OUTPUT);
