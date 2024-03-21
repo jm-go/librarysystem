@@ -109,6 +109,11 @@ public class BookService {
             }
         }
         if (isReturned) {
+            User user = authService.getUserByUsername(username);
+            if (user != null) {
+                user.removeLoanedBookNumber(bookNumber);
+                authService.saveUsersToJson();
+            }
             saveBooksToJson();
         }
         return isReturned;
