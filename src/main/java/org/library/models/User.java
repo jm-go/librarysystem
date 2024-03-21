@@ -56,4 +56,8 @@ public class User {
             this.loanedBookNumbers.add(bookNumber);
         }
     }
+
+    public void removeLoanedBookNumber(int bookNumber) {
+        this.loanedBookNumbers.remove(Integer.valueOf(bookNumber));
+    }
 }
