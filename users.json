@@ -7,10 +7,10 @@
   "username" : "user",
   "password" : "password",
   "role" : "user",
-  "loanedBookNumbers" : [ ]
+  "loanedBookNumbers" : [ 120 ]
 }, {
   "username" : "anna1",
   "password" : "password",
   "role" : "user",
-  "loanedBookNumbers" : [ 120 ]
+  "loanedBookNumbers" : [ 118 ]
 } ]

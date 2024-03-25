@@ -1175,9 +1175,9 @@
   "genre" : "nonfiction",
   "subGenre" : "autobiography",
   "publisher" : "Dell",
-  "isLoaned" : false,
-  "loanedTo" : null,
-  "timesLoaned" : 0
+  "isLoaned" : true,
+  "loanedTo" : "anna1",
+  "timesLoaned" : 1
 }, {
   "number" : 119,
   "title" : "Karl Marx Biography",
@@ -1196,6 +1196,6 @@
   "subGenre" : "classic",
   "publisher" : "Penguin",
   "isLoaned" : true,
-  "loanedTo" : "anna1",
-  "timesLoaned" : 1
+  "loanedTo" : "user",
+  "timesLoaned" : 2
 } ]

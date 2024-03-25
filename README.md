@@ -6,8 +6,8 @@ This Library System is a console-based application developed in Java. It enables
 
 ## Features
 
-- **User Accounts**: Allows for the creation of new user accounts. The system includes default accounts for both a standard user and an administrator.
-- **Book Management**: Users can view available books, loan books, and return books.
+- **User Accounts**: Allows for the creation of new user accounts. The system includes default accounts for both a standard user and an administrator. User account information is persisted across sessions in a JSON file.
+- **Book Management**: Users can view available books, loan books, and return books. The status of each book (available or loaned) is persisted in a JSON file, ensuring data persistence across application restarts.
 - **Reporting**: Administrators can access reports to see which books are currently loaned out and the frequency of loans for each book.
 
 ## Getting Started

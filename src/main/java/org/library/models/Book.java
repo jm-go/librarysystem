@@ -23,8 +23,7 @@ public class Book {
         this.timesLoaned = 0;
     }
 
-    public Book() {
-    }
+    public Book() {}
 
     public Book(int number, String title, String author, String genre, String subGenre, String publisher, boolean isLoaned, String loanedTo) {
         this(number, title, author, genre, subGenre, publisher);
